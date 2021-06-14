@@ -1,8 +1,5 @@
 package com.bridgelabz.stacknqueue;
 
-import com.bridgelabz.queue.LinkedList;
-import com.bridgelabz.queue.Node;
-
 /**
  * Purpose: Implementation Of Stack Using LInked List
  * @author Ganesh Gavhad
@@ -24,6 +21,24 @@ public class MyStack <T> {
 		
 		List.AtStart(data);
 	}
+	 /**
+     * For removes the top most Data/value of the stack
+     */
+    public void pop() {
+    	List.pop();
+    }
+    /**
+     * For  find the first element in stack
+     * @return
+     */
+    public T peek() {
+    	
+    	while(List.peek() != null) {
+            System.out.println("Top most element of the stack is: "+List.peek());
+            break;
+    	}
+        return List.peek();
+    }
 	/**
 	 * Show function by Using Linked List Class Method
 	 */

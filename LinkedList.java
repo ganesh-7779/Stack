@@ -140,6 +140,15 @@ public class LinkedList <T> {
 	        }
 	    }
 		/**
+		 * For Find First Element In Stack
+		 */
+		public T peek() {
+	        Node<T> node = head;
+	        return(node == null) ? null : node.data;
+	
+		}
+
+		/**
 		 * Printing The Data Of Node till next equal to null
 		 */
 		public void show() {
