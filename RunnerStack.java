@@ -13,5 +13,13 @@ public class RunnerStack {
         List.push(30);
         List.push(56);
         List.showRunner();
+        
+        System.out.println();
+
+        List.peek();
+        List.pop();
+        List.showRunner();
+        
 	}
-}
+	}
+
